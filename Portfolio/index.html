@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Hisham Mohamed</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body class="Background">
+
+    <!-- Navbar -->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+    </div>
+
+    <!-- Background video -->
+    <div id="Home">
+        <video autoplay muted loop id="Typing_Video">
+            <source src="https://cdn.pixabay.com/video/2015/10/16/1046-142621379_tiny.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- Video text -->
+    <div class="Video_Text">
+        <h1 class="white-text">Hisham Mohamed's Portfolio</h1>
+        <strong>
+            <p class="center quote">
+                <q>In the world of code, logic becomes language and creativity turns into structure.
+                    <br>Every line I write is a step toward building something that matters.
+                    <br>Passion fuels the process, and curiosity keeps the journey alive.
+                </q>
+                <br> - Hisham Mohamed<br><br>
+                Hello! I'm Hisham Mohamed, a dedicated student developer exploring the endless potential of software engineering.
+                <br><br>
+                Dive in to learn more about my skills, projects, and the path I'm shaping through technology.
+            </p>
+        </strong>
+    </div>
+
+    <!-- Slideshow -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+
+                <!-- Slides -->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg">
+                    <div class="text">Eager to build solutions that make a difference</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png">
+                    <div class="text">Proficient in HTML, CSS & JavaScript</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/05/31/15/14/woman-792162_1280.jpg">
+                    <div class="text">Comfortable with Python scripting and automation</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/12/09/15/51/code-1084923_1280.png">
+                    <div class="text">Learning full-stack development with ASP.NET & C#</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg">
+                    <div class="text">Database experience with SQL and backend APIs</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg">
+                    <div class="text"><a class="white-text contact" onclick="openForm()">Let’s build something together!</a></div>
+                </div>
+
+                <!-- Navigation -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="Row" id="About">
+        <div class="Column_2">
+            <img src="https://cdn.pixabay.com/photo/2019/04/25/14/43/workplace-4155023_1280.jpg" alt="Laptop">
+        </div>
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                I'm Hisham Mohamed, a student with a deep passion for programming, design, and problem-solving.
+                <br><br>
+                Currently pursuing full-stack development and sharpening my skills through hands-on projects and continuous learning.
+                I have completed coursework in:
+                HTML, CSS, JavaScript, Python, SQL, and C#.
+                <br><br>
+                My mission? To turn great ideas into functional, user-friendly applications. I’m always looking to collaborate and grow.
+                <a onclick="openForm()" class="contact">Let’s connect and create!</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- GitHub -->
+    <div class="Row" id="GitHub">
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p>Explore my coding projects and experiments on GitHub:</p>
+            <p class="center"><a href="https://github.com/HishamMohamed" target="_blank">Visit My GitHub</a></p>
+        </div>
+        <div class="Column_2">
+            <a href="https://github.com/HishamMohamed" target="_blank">
+                <img src="https://cdn.pixabay.com/photo/2021/09/23/06/59/github-6648895_1280.jpg" alt="GitHub Logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm" ondblclick="closeForm()">
+            <form action="" method="POST" class="form-container">
+                <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                <input type="text" placeholder="Type your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                <input type="text" placeholder="Type your message here" name="message">
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="center">&copy; Hisham Mohamed, <a href="https://github.com/HishamMohamed" target="_blank">GitHub Profile</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
